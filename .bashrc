@@ -49,6 +49,7 @@ _fzf_comprun() {
 }
 
 alias cat="bat --paging=never"
+alias plain="bat --paging=never --plain"
 
 alias ls="eza --git --icons=always"
 
