@@ -48,7 +48,7 @@ _fzf_comprun() {
 	esac
 }
 
-alias cat="bat"
+alias cat="bat --paging=never"
 
 alias ls="eza --git --icons=always"
 
