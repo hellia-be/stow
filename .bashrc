@@ -50,7 +50,7 @@ _fzf_comprun() {
 
 alias cat="bat"
 
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ls="eza --git --icons=always"
 
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
