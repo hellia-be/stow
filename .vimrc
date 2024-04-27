@@ -18,7 +18,6 @@ call vundle#end()
 filetype plugin indent on
 
 " Special
-let wallpaper  = "/home/hellia/Pictures/wallhaven-73wx23.jpg"
 let background = "#081D27"
 let foreground = "#bac99f"
 let cursor     = "#bac99f"
