@@ -8,7 +8,11 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias cd='z'
-PS1='[\u@\h \W]\$ '
+
+export GIT_PS1_SHOWDIRTYSTATE='true'
+export GIT_PS1_SHOWUNTRACKEDFILES='true'
+source ~/git/git-prompt.sh  
+PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='\t \u on \h\n\w${PS1_CMD1} \$ > '
 
 # Import colorscheme from wal asynchronously
 (cat ~/.cache/wal/sequences &)
