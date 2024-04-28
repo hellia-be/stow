@@ -11,7 +11,7 @@ alias cd='z'
 
 export GIT_PS1_SHOWDIRTYSTATE='true'
 export GIT_PS1_SHOWUNTRACKEDFILES='true'
-export GIT_PS1_SHOWUPSTREAM='true'
+export GIT_PS1_SHOWUPSTREAM='auto'
 source ~/git/git-prompt.sh  
 PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='\t \u on \h\n\w${PS1_CMD1} \$ > '
 
