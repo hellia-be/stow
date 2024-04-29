@@ -8,7 +8,12 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias cd='z'
-PS1='[\u@\h \W]\$ '
+
+export GIT_PS1_SHOWDIRTYSTATE='true'
+export GIT_PS1_SHOWUNTRACKEDFILES='true'
+export GIT_PS1_SHOWUPSTREAM='auto'
+source ~/git/git-prompt.sh  
+PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='\t \u on \h\n\w${PS1_CMD1} \$ > '
 
 # Created by `pipx` on 2024-03-30 00:58:21
 export PATH="$PATH:/home/mediaserv/.local/bin"
